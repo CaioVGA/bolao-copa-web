@@ -10,12 +10,18 @@ module.exports = {
       },
 
       backgroundImage: {
-        app: 'url(/app-bg.png)',
+        app: 'url(/app-bg-2.png)',
       },
 
       colors:{
         softgreen: {
           500: '#129E57',
+        },
+
+        red: {
+          300: '#B11544',
+          600: '#8B1538',
+          700: '#510D21',
         },
 
         yellow: {
