@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import appPreviewImg from '../assets/app-nlw-copa-preview.png';
-import logoImg from '../assets/logo.svg';
+import logoImg from '../assets/logo-fifa-cup.svg';
 import usersAvatarExampleImg from '../assets/users-avatar-example.png';
-import iconCheckImg from '../assets/icon-check.svg';
+import iconCheckImg from '../assets/icon-check-red.svg';
 import { api } from '../lib/axios';
 import { FormEvent, useState } from 'react';
 
@@ -36,9 +36,9 @@ export default function Home(props: HomeProps) {
   return (
     <div className="max-w-[1124px] h-screen mx-auto grid grid-cols-2 gap-28 items-center">
       <main>
-        <Image src={ logoImg } alt="Logo da aplicação" />
+        <Image src={ logoImg } alt="Logo da aplicação" width={140} height={140} />
 
-        <h1 className="mt-14 text-white text-5xl font-bold leading-tight">
+        <h1 className="text-white text-5xl font-bold leading-tight">
           Crie seu próprio bolão da Copa do Mundo!
         </h1>
 
@@ -46,7 +46,7 @@ export default function Home(props: HomeProps) {
           <Image src={ usersAvatarExampleImg } alt="" />
 
           <strong className="text-gray-100 text-xl">
-            <span className="text-softgreen-500">+{props.usersCount}</span> usuários fazendo suas apostas
+            <span className="text-red-300">+{props.usersCount}</span> usuários fazendo suas apostas
           </strong>
         </div>
 
@@ -58,7 +58,7 @@ export default function Home(props: HomeProps) {
             onChange={event => setPoolTitle(event.target.value)}
             value={poolTitle}
           />
-          <button type="submit" className="bg-yellow-500 px-6 py-4 rounded text-gray-900 font-bold text-sm uppercase hover:bg-yellow-700 hover:underline">
+          <button type="submit" className="bg-red-600 px-6 py-4 rounded text-gray-100 font-bold text-sm uppercase hover:bg-red-700 hover:underline">
             Criar o meu bolão
           </button>
         </form>
