@@ -14,13 +14,11 @@ module.exports = {
       },
 
       colors:{
-        softgreen: {
-          500: '#129E57',
-        },
-
-        yellow: {
-          500: '#F7DD43',
-          700: '#E5CD3D',
+        
+        red: {
+          300: '#B11544',
+          600: '#8B1538',
+          700: '#510D21',
         },
 
         gray: {
